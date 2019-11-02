@@ -3,6 +3,8 @@
 This is a demo todo list project.
 Such technologies used for this project: HTML 5, Less, Bootstrap 4, JavaScript ES6, Webpack 4.
 
+You can see this project at GitHub Pages using this link - https://estacet.github.io/Ciklum-test-task/public/
+
 ## Installation
 
 1. Clone repository and go to the project dir
