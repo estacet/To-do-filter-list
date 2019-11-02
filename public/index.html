@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<header>
+    <h1 class="header_headline">TODO<span class="red-text">list</span></h1>
+</header>
+<main class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="search-form_header red-text">Search by:</div>
+            <form>
+                <div class="row">
+                    <div class="col">
+                        <label for="js-filter-title">Title</label>
+                        <input type="text" id="js-filter-title" class="form-control" placeholder="Search by title">
+                    </div>
+                    <div class="col">
+                        <label for="js-filter-status">Status</label>
+                        <select id="js-filter-status" class="form-control">
+                            <option value="1">All</option>
+                            <option value="2">Open</option>
+                            <option value="3">Done</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="js-filter-priority">Priority</label>
+                        <select id="js-filter-priority" class="form-control">
+                            <option value="1">All</option>
+                            <option value="2">High</option>
+                            <option value="3">Normal</option>
+                            <option value="4">Low</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-primary mb-2 search-form_create" id="js-open-popup">Create</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-12 existingList"></div>
+    </div>
+</main>
+<div class="popup" id="js-popup"></div>
+<form class="popup-form" id="js-popup-form">
+    <div class="form-group">
+        <label for="newTaskTitle">Title</label>
+        <input type="text" class="form-control" id="newTaskTitle">
+    </div>
+    <div class="form-group">
+        <label for="newTaskDescription">Description</label>
+        <textarea id="newTaskDescription" class="form-control"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="newTaskPriority">Priority</label>
+        <select class="form-control" id="newTaskPriority">
+            <option value="2">High</option>
+            <option selected value="3">Normal</option>
+            <option value="4">Low</option>
+        </select>
+    </div>
+    <button class="btn btn-primary" id="newTaskCancel">Cancel</button>
+    <button class="btn btn-primary" id="newTaskSave">Create</button>
+</form>
+<script src="js/app.js"></script>
+</body>
+</html>
