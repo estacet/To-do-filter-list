@@ -1,4 +1,4 @@
-# Ciklum test task
+# To-dos filter
 
 This is a demo todo list project.
 Such technologies used for this project: HTML 5, Less, Bootstrap 4, JavaScript ES6, Webpack 4.
